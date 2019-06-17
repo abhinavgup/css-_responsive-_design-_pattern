@@ -1,0 +1,86 @@
+
+body{
+    margin:0;
+}
+
+.box{
+    display: block;
+}
+
+
+.smallbox-1, .smallbox-2, .smallbox-3 , .smallbox-4 , .smallbox-5{
+
+width: 100%;
+height: 80px;
+
+}
+
+
+.smallbox-1{
+    background-color: aqua;
+
+}
+
+.smallbox-2{
+    background-color: chartreuse;
+}
+
+.smallbox-3{
+    background-color: darkmagenta;
+}
+
+.smallbox-4{
+    background-color: darkgoldenrod;
+}
+
+.smallbox-5{
+    background-color: firebrick;
+}
+
+
+@media (min-width:600px){
+
+    .box{
+
+    display: flex ;
+    flex-wrap: wrap;
+    
+}
+
+
+.smallbox-1{
+    width:100%;
+}
+
+.smallbox-2 , .smallbox-3 ,.smallbox-4 , .smallbox-5{
+    width: 50%;
+}
+
+}
+
+
+@media (min-width:800px){
+
+.smallbox-1 {
+    width:60%;
+}
+
+ .smallbox-2{
+    width:40%;
+}
+
+
+.smallbox-3 , .smallbox-4 , .smallbox-5{
+    width: 33.3%;
+}
+
+}
+
+
+@media (min-width:900px){
+
+    .box{
+        width:1000px;
+        margin: 0 auto;
+    }
+}
