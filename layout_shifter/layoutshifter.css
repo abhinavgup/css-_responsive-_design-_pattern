@@ -1,0 +1,95 @@
+body{
+    margin:0;
+}
+
+box{
+    display: block;
+    
+}
+
+.smallbox-1 , .smallbox-2 , .smallbox-3{
+
+height: 100px;
+
+}
+
+
+.smallbox-1{
+    background-color: aqua;
+
+}
+
+.smallbox-2{
+    background-color: chartreuse;
+}
+
+.smallbox-3{
+    background-color: darkmagenta;
+}
+
+
+@media (min-width:600px){
+
+
+    .smallbox-1{
+
+        height: 25px;
+    }
+
+    .smallbox-2{
+
+        height: 50px;
+
+    }
+
+    .smallbox-3{
+
+         height: 25px;
+
+    }
+}
+
+@media (min-width:800px){
+
+
+    .box{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .small{
+        width: 80%;
+    }
+    .smallbox-1{
+        width: 20%;
+        height:100px;
+    }
+    
+    .smallbox-2{
+        width: 80%;
+        height: 50px;
+    
+    }
+    
+    .smallbox-3{
+        width: 80%;
+        height:50px;
+    }
+
+}
+
+@media (min-width:900px){
+
+
+.box{
+
+width: 1000px;
+margin:0 auto;
+
+
+
+}
+
+
+}
